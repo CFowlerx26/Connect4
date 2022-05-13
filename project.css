@@ -1,0 +1,47 @@
+body{
+    font-family: "Academy Engraved LET";
+    font-size: x-large;
+    text-align: center;
+
+    background-color: rgb(232, 9, 169);
+    background-image: url(./Images/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin: 300px auto;
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+
+    background-color: transparent;
+    border: 10px solid black;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+
+    background-color: #e4ff7f;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.rick-piece {
+    background-image: url(./Images/Rick.png);
+	background-size: cover;
+	border: 5px solid white;
+}
+
+.morty-piece {
+    background-image: url(./Images/Morty.png);
+	background-size: cover;
+	border: 5px solid white;
+}
