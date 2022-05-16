@@ -1,7 +1,6 @@
 console.log("Running");
 
 
-
 var playerRick = "R";
 var playerMorty = "M";
 var currPlayer = playerRick; // Shows current player 
@@ -9,6 +8,7 @@ var currPlayer = playerRick; // Shows current player
 var gameOver = false;
 var board;
 var currColumns;
+
 
 //Setting how many rows & columns are in the table
 var rows = 6;
@@ -19,7 +19,7 @@ window.onload = function () {
     setGame();
 }
 
-setTimeout(function() { alert("We Are Going On A Trip!"); }, 3000);
+setTimeout(function() { alert("Morty, I need your help on an adventure!"); }, 7000);
 function setGame() {
     board = [];
     currColumns = [5, 5, 5, 5, 5, 5, 5] // adds an array so that not just any spot can be selected      
@@ -127,10 +127,11 @@ function checkWinner() {
 function setWinner(r, c) {
     let winner = document.getElementById("winner");
     if (board[r][c] == playerRick) {
-        winner.innerText = "Rick Wins";
+        winner.innerText = "Oh Geez Rick, You Won!";
     } else {
-        winner.innerText = "Morty Wins";
+        winner.innerText = "I Programmed You To Believe That You Won Morty";
     }
 
     gameOver = true;
 }
+

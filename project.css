@@ -1,3 +1,10 @@
+@media screen and (min-width: 780px) {
+    .full-width-img {
+    margin: auto;
+    width: 100%;
+    }
+}
+
 body{
     font-family: "Academy Engraved LET";
     font-size: x-large;
@@ -9,6 +16,12 @@ body{
     background-size: 90%;
     background-position: center;
     margin: 300px auto;
+}
+
+p {
+    float: left;
+    font-family: "Comic San MS";
+    font-size: xx-large;
 }
 
 #board {
